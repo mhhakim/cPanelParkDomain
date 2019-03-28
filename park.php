@@ -9,7 +9,7 @@ $domains = 'name1.tld,name2.tld,nameN.tld';
 
 $domains = explode(',', $domains);
 foreach($domains as $domain) {
-    $result = json_decode($xmlapi->park("hakievew",$domain,""));
+    $result = json_decode($xmlapi->park("cPanelUsername",$domain,""));
     $data = $result->cpanelresult->data;
 
     var_dump($data);
